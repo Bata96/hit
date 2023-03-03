@@ -1,0 +1,450 @@
+body {
+  background-color: black;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.App {
+  background-image: url("https://wallpaperaccess.com/full/1374063.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.nav {
+  background-color: rgba(0, 0, 139, 0.8);
+  width: 100vw;
+  max-width: 500px;
+  border: 1px solid white;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 10;
+}
+.nav .link {
+  color: white;
+}
+.nav div {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.nav .title {
+  font-size: 24px;
+}
+
+.menu {
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid white;
+  border-top: none;
+  width: 100vw;
+  max-width: 500px;
+  height: 100vh;
+  max-height: 600px;
+  overflow: hidden;
+}
+
+.container {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100vw;
+  max-width: 500px;
+  height: 100%;
+  max-height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+.container .dugme {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0);
+  width: 100vw;
+  max-width: 500px;
+  height: 100vh;
+  max-height: 560px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container .dugme .start {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 50%;
+}
+.container .dugme .start .count {
+  background-color: rgba(255, 255, 255, 0.7);
+  border: 1px solid black;
+  width: 100px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  border-radius: 10px;
+}
+.container .dugme .start .count1 {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 200px;
+  animation-name: countdown;
+  animation-duration: 1.1s;
+}
+.container .dugme .start .count:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+  cursor: pointer;
+}
+@keyframes countdown {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+.container .dugme1 {
+  position: absolute;
+  left: 10000px;
+  background-color: rgba(255, 255, 255, 0);
+  width: 100vw;
+  max-width: 500px;
+  height: 100vh;
+  max-height: 560px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.container .again {
+  position: absolute;
+  background-color: rgba(81, 183, 218, 0.4);
+  width: 100vw;
+  max-width: 500px;
+  height: 100vh;
+  max-height: 560px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0px;
+}
+.container .again .restart {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.container .again .restart .playAgain {
+  background-color: rgba(255, 255, 255, 0.7);
+  border: 1px solid black;
+  width: 200px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  border-radius: 10px;
+}
+.container .again .restart .playAgain:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+  cursor: pointer;
+}
+.container .again1 {
+  position: absolute;
+  left: 10000px;
+  background-color: rgba(255, 255, 255, 0);
+  width: 100vw;
+  max-width: 500px;
+  height: 100vh;
+  max-height: 560px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.table {
+  width: 95vw;
+  max-width: 480px;
+  height: 100vh;
+  max-height: 500px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 10px;
+  padding: 0px;
+  margin-top: 42px;
+}
+
+.tableL {
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 95vw;
+  max-width: 480px;
+  height: 100vh;
+  max-height: 500px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  padding: 0px;
+  margin-top: 42px;
+}
+
+.tableS {
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 95vw;
+  max-width: 480px;
+  height: 100vh;
+  max-height: 500px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  padding: 0px;
+  margin-top: 42px;
+}
+
+.table:hover, .tableL:hover, .tableS:hover {
+  cursor: pointer;
+}
+
+.krug {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.krug:hover {
+  cursor: pointer;
+}
+
+.rezultat {
+  width: 100%;
+  height: 40px;
+  background-color: rgba(0, 0, 139, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  border-bottom: 1px solid white;
+  font-size: 20px;
+}
+.rezultat div {
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+  border-radius: 10px;
+}
+
+.rules {
+  background-color: rgba(81, 183, 218, 0.8);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.rules h3 {
+  margin-top: 0px;
+}
+.rules p {
+  margin-top: -10px;
+  font-size: 18px;
+}
+.rules .link {
+  border-top: 1px solid black;
+  margin-top: 20px;
+  font-size: 24px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.rules .link :hover {
+  font-size: 28px;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+.rules div {
+  width: 100px;
+  text-align: center;
+  border-radius: 10px;
+}
+.rules div:hover {
+  width: 200px;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  gap: 10px;
+}
+.home .link {
+  border-bottom: 1px solid black;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+.home div {
+  width: 100px;
+  text-align: center;
+}
+.home div:hover {
+  width: 200px;
+}
+.home .link:hover {
+  font-size: 34px;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.play {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  gap: 10px;
+}
+.play .link {
+  border-bottom: 1px solid black;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+.play .link:hover {
+  font-size: 34px;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+.play div {
+  text-align: center;
+  width: 120px;
+}
+.play div:hover {
+  width: 200px;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  position: relative;
+  overflow: hidden;
+  gap: 10px;
+}
+.profile .nalog {
+  background-color: rgba(81, 183, 218, 0.8);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 300px;
+  gap: 10px;
+  border-radius: 10px;
+}
+.profile .nalog .ime {
+  font-size: 30px;
+}
+.profile .nalog div {
+  font-size: 25px;
+}
+.profile .nalog1 {
+  position: absolute;
+  left: 10000px;
+  color: white;
+}
+.profile .create {
+  background-color: rgba(81, 183, 218, 0.8);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  gap: 10px;
+  width: 300px;
+  height: 200px;
+  border-radius: 10px;
+}
+.profile .create input {
+  padding: 5px;
+  border-radius: 10px;
+}
+.profile .create button {
+  padding: 3px 10px;
+  border-radius: 10px;
+}
+.profile .create button:hover {
+  cursor: pointer;
+}
+.profile .create1 {
+  position: absolute;
+  left: 10000px;
+}
+.profile .link {
+  border-bottom: 1px solid black;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 10px;
+}
+.profile .delete {
+  border-bottom: 1px solid black;
+  background-color: rgba(255, 255, 255, 0.7);
+  width: 100px;
+  text-align: center;
+  border-radius: 10px;
+}
+.profile .delete:hover {
+  cursor: pointer;
+  font-size: 34px;
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 200px;
+}
+.profile .back {
+  width: 100px;
+  text-align: center;
+}
+.profile .back:hover {
+  width: 200px;
+}
+.profile .link:hover {
+  font-size: 34px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+@media only screen and (max-width: 600px) {
+  .App {
+    width: 100%;
+    height: 100vh;
+  }
+  .menu {
+    height: 100vh;
+    max-height: 100%;
+  }
+  .container {
+    height: 100%;
+    max-height: 100%;
+  }
+  .container .again {
+    height: 100%;
+    max-height: 100%;
+  }
+}/*# sourceMappingURL=App.css.map */
