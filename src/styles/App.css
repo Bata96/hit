@@ -191,9 +191,7 @@ body {
   gap: 10px;
   padding: 0px;
   margin-top: 42px;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .tableL {
@@ -207,9 +205,7 @@ body {
   gap: 10px;
   padding: 0px;
   margin-top: 42px;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .tableS {
@@ -223,9 +219,7 @@ body {
   gap: 10px;
   padding: 0px;
   margin-top: 42px;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .table:hover, .tableL:hover, .tableS:hover {
